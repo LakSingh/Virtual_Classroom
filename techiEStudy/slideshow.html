@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+background-color:black;}
+.slideShow, .slides, .prev, .next{
+box-sizing:border-box;}
+img {vertical-align: middle;}
+.slideShow{
+max-width:300px;
+//position:relative;
+margin-right:0px;
+margin-left:1000px;
+border-width:2px;
+}
+.slides{
+display:none;}
+
+.prev, .next{
+cursor:pointer; 
+position:absolute;
+transition: 0.6s ease;
+top:150px;  border-radius: 0 3px 3px 0; user-select:none;
+width:auto;
+margin-top:-22px;
+padding:16px;
+color:white;}
+
+.prev{left:1000;}
+.next{right:0;  
+border-radius: 3px 0 0 3px;}
+.para{
+
+width:600px;
+height:400px;
+}
+
+#main{
+display:flex;
+justify-content:center;}
+
+.prev:hover, .next:hover{
+background-color:rgba(0,0,0,0.8);}
+</style>
+</head><body>
+<br><br>
+<div id="main">
+<div class="para"><p style="background-color:white">dbcdsvjk cjdjcv dhcbhcb jhcbecbdhcbh</p>
+</div>
+<div class="slideShow">
+<div class="slides">
+<img src="images.jpg" style="width:350px" height="250px">
+</div>
+<div class="slides">
+<img src="images (1).jpg" style="width:300px" height="250px">
+</div>
+<div class="slides">
+<img src="images (2).jpg" style="width:300px" height="250px">
+</div>
+<div class="slides">
+<img src="images (3).jpg" style="width:300px" height="250px">
+</div>
+<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+<a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+</div><br>
+<script>
+var index=1;
+showSlides(index);
+function changeSlide(n){
+index=index+n;
+showSlides(index);}
+function showSlides(n){
+var i;
+var slides=document.getElementsByClassName("slides");
+if(n>slides.length){index=1;}
+if(n<1){index=slides.length;}
+for(i=0;i<slides.length;i++){
+slides[i].style.display="none";}
+slides[index-1].style.display="block";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="techiestudy.css">
+<script type="text/javascript" src="techiestudy.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input[type=text], input[type=password] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 6px 25px 6px 55px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 69%;
+font-size:20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 120px;
+  height:120px;
+  border-radius: 50%;
+}
+
+.container {
+padding: 10px;
+width:400px;
+height:400px;
+margin-left:450px;
+ background: rgb(0,255,255,0.3);
+}
+
+span.psw {
+  float: right;
+  //padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: right;
+  }
+}
+</style>
+<script>
+function validate(){
+var eml=document.login.email.value;
+if(!(/^[A-Za-z._]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z]{2,6}$/).test(eml))
+alert("email must contain @ after at least 3 letters and . after at least 3 letters after @ and at least 2 letters after .");
+}
+</script>
+
+</head>
+<body><br>
+<div id="head">
+<img src="logo.jpg" width="150px" height="100px">
+</div><br>
+<div class="nav">
+<a class="hactive" href="home.html"><b>Home</b></a>
+<a href="register.html"><b>Register</b></a>
+<a href="login.html"><b>Login</b></a>
+<a href="about.html"><b>About Us</b></a>
+</div>
+<br><br>
+<form action="login.php" name="login" method="POST" onsubmit="return validate()">
+ <div class="container">
+ <div class="imgcontainer">
+    <img src="login.jpg" alt="Avatar" class="avatar">
+ </div>
+    <input type="text" placeholder="Enter Email id" name="email" required>
+    <br><br><input type="password" placeholder="Enter Password" name="psw" required>
+     <br><br>
+    <center><button type="submit">Login</button>
+   </center>
+  </div>
+</form><br>
+<label style="margin-left:450px; margin-top:8px;font-size:19px;">
+Not Registered yet?<a href="register.html" style="text-decoration:none;color:red;font-weight:bold" onMouseOver="this.style.color='gray'" onMouseOut="this.style.color='red'"> Register</a>
+</label><br><br><br>
+
+</br></br><div id="bottom">
+<div class="developers">
+<h2 font-weight="bold">Developed By: </h2>
+<p class="contact" style="margin-top:0px;">
+<b>ANURAG SOLANKI</b><br>
+1806052<br>
+<b>LAXMI KUMARI</b><br>
+ 1806073<br>
+Computer Science and Engineering Department,<br>
+<b>National Institute of Technology, Patna.</b>
+<br><img src="https://img.collegepravesh.com/2016/09/NITP-Logo.png" width="100px" height="100px" style="margin-left:60px;"/></p>
+</div><div class="ts">
+<img src="logo.jpg" width="150px" height="100px">
+<p style="font-family:ravie;"><b>LEARN</b>, <b>PRACTICE</b> & <b>ENJOY.</b>
+<p style="color:turquoise; margin-top:130px;margin-left:130px;">
+<i>www.techiestudy.com
+</i></div></div>
+</body>
+</html>
+
+

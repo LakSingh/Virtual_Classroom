@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<title>techiestudy.com
+</title>
+<link rel="stylesheet" type="text/css" href="techiestudy.css">
+<style>
+table{
+width:100%;
+border-collapse:collapse;
+}
+td,tr{
+border: 1px solid lightgray;}
+th,td{padding:15px;}
+</style>
+</head>
+<div id="head">
+<img src="logo.jpg" width="150px" height="100px">
+</div>
+<div class="nav">
+<a class="hactive" href="home2.html"><b>Home</b></a>
+<div class="dropdown">
+    <button class="dropbtn">Courses 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="c.html">C</a>
+      <a href="c++.html">C++</a>
+      <a href="java.html">Java</a>
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="js.html">Javascript</a>
+    </div>
+  </div> 
+<a href="c.html"><b>C</b></a>
+<a href="c++.html"><b>C++</b></a>
+<a href="java.html"><b>Java</b></a>
+<a href="html.html"><b>HTML</b></a>
+<a href="css.html"><b>CSS</b></a>
+<a href="js.html"><b>Javascript</b></a>
+<a href="home.html">Logout</a>
+</div>
+<div class="topics">
+<ul type="square">
+<li style="padding:8px;"><a class="top" href="c.html">C language Tutorial</a></li>
+<li style="padding:8px;"><a class="top" href="c1.html">Flow of C Program</a></li>
+<li style="padding:8px;"><a class="top" href="c2.html">printf and scanf in C</a></li>
+<li style="padding:8px;"><a class="top" href="c3.html">Variables in C</a></li>
+<li style="padding:8px;"><a class="top" href="c4.html">Data Types in C</a></li>
+<li style="padding:8px;"><a class="top" href="c5.html">Keywords in C</a></li>
+<li style="padding:8px;"><a class="top" href="c6.html">C Operators</a></li>
+<ul type="disc">
+<li style="padding:8px;"><a class="top1" href="#ope">Operators</a></li>
+<li style="padding:8px;"><a class="top1" href="#prec">Precedence of operators </a></li>
+</ul>
+<li style="padding:8px;"><a class="top" href="c7.html">C comments</a></li>
+<li style="padding:8px;"><a class="top" href="c8.html">C Control Statements</a></li>
+<li style="padding:8px;"><a class="top" href="c8.html#ifelse">if-else</a></li>
+<li style="padding:8px;"><a class="top" href="c9.html">C Loops</a></li>
+</ul>
+</div>
+<div class="content">
+<h2 id="ope">C Operators</h2>
+An operator is simply a symbol that is used to perform operations. There can be
+<br> many types of operations like arithmetic, logical, bitwise, etc.
+<br><br>There are following types of operators to perform different types of
+<br>operations in C language.
+<ul type="circle">
+<li>Arithmetic Operators</li>
+<li>Relational Operators</li>
+<li>Shift Operators</li>
+<li>Logical Operators</li>
+<li>Bitwise Operators</li>
+<li>Ternary or Conditional Operators</li>
+<li>Assignment Operator</li>
+<li>Misc Operator</li>
+</ul>
+<br><br>
+<h2 type="prec">Precedence of Operators in C</h2>
+<br>The precedence of operator species that which operator will be evaluated first
+<br>and next. The associativity specifies the operator direction to be evaluated; 
+<br>it may be left to right or right to left.
+<br>The precedence and associativity of C operators is given below:
+<br><br><br>
+<table>
+<tr>
+<th style="background-color:#474b4f;color:white;font-size:19px;">Category</th>
+<th style="background-color:#474b4f;color:white;font-size:19px;">Operator</th>
+<th style="background-color:#474b4f;color:white;font-size:19px;">Associativity</th>
+</tr>
+<tr>
+<td >Postfix</td>
+<td >() [] -> . ++ --</td>
+<td >Left to right</td>
+</tr>
+<tr>
+<td style="background:rgb(0,255,255,0.25);">Unary</td>
+<td style="background:rgb(0,255,255,0.25);">+ - ! ~ ++ - - (type)* & sizeof	</td>
+<td style="background:rgb(0,255,255,0.25);">Right to left</td>
+</tr>
+<tr>
+<td >Multiplicative</td>
+<td >* / %</td>
+<td >Left to right</td>
+</tr>
+<tr>
+<td style="background:rgb(0,255,255,0.25);">Additive</td>
+<td style="background:rgb(0,255,255,0.25);">+ -	</td>
+<td style="background:rgb(0,255,255,0.25);">Left to right</td>
+</tr>
+<tr>
+<td >Shift</td>
+<td ><< >></td>
+<td >Left to right</td>
+</tr>
+<tr>
+<td style="background:rgb(0,255,255,0.25);">Relational</td>
+<td style="background:rgb(0,255,255,0.25);">< <= > >=</td>
+<td style="background:rgb(0,255,255,0.25);">Left to right</td>
+</tr>
+<tr>		
+<td >Equality</td>
+<td >== !=</td>
+<td >Left to right</td>
+</tr>
+<tr>
+<td style="background:rgb(0,255,255,0.25);">Bitwise AND</td>
+<td style="background:rgb(0,255,255,0.25);">&	</td>
+<td style="background:rgb(0,255,255,0.25);">Left to right</td>
+</tr>
+<tr>
+<td >Bitwise XOR</td>
+<td >^</td>
+<td >Left to right</td>
+</tr>
+<tr>
+<td style="background:rgb(0,255,255,0.25);">Bitwise OR</td>
+<td style="background:rgb(0,255,255,0.25);">|	</td>
+<td style="background:rgb(0,255,255,0.25);">Left to right</td>
+</tr>
+<tr>
+<td >Logical AND</td>
+<td >&&</td>
+<td >Left to right</td>
+</tr>
+<tr>
+<td style="background:rgb(0,255,255,0.25);">Logical OR</td>
+<td style="background:rgb(0,255,255,0.25);">||	</td>
+<td style="background:rgb(0,255,255,0.25);">Left to right</td>
+</tr>
+<tr>
+<td >Conditional</td>
+<td >?:</td>
+<td >Right to left</td>
+</tr>
+<tr>
+<td style="background:rgb(0,255,255,0.25);">Assignment</td>
+<td style="background:rgb(0,255,255,0.25);">= += -= *= /= %=>>= <<= &= ^= |=</td>
+<td style="background:rgb(0,255,255,0.25);">Right to left</td>
+</tr>
+<tr>
+<td >Comma</td>
+<td >,</td>
+<td >Left to right</td>
+</tr>
+</table>
+ <br><br>
+<div id="change">
+<div style="margin-left:0px;float:left;overflow:hidden;background-color:#474b4f;border-radius:50px;color:#f1f1f1; padding:15px;width:85px;height:20px;">
+<center><a href="c5.html" style="text-decoration:none;color:#f1f1f1;font-size:20px;font-weight:bold;">Previous</a></center>
+</div>
+<div style="margin-left:400px;overflow:hidden;background-color:#474b4f;border-radius:50px;color:#f1f1f1;padding:15px;width:70px;height:20px;">
+<center><a href="c7.html" style="text-decoration:none;color:#f1f1f1;font-size:20px;font-weight:bold;">Next</a></center>
+</div>
+</div>
+</div>
+
+</br></br></br><div id="bottom">
+<div class="developers">
+<h2 font-weight="bold">Developed By: </h2>
+<p class="contact" style="margin-top:0px;">
+<b>ANURAG SOLANKI</b><br>
+1806052<br>
+<b>LAXMI KUMARI</b><br>
+ 1806073<br>
+Computer Science and Engineering Department,<br>
+<b>National Institute of Technology, Patna.</b>
+<br><img src="https://img.collegepravesh.com/2016/09/NITP-Logo.png" width="100px" height="100px" style="margin-left:60px;"/></p>
+</div><div class="ts">
+<img src="logo.jpg" width="150px" height="100px">
+<p style="font-family:ravie;"><b>LEARN</b>, <b>PRACTICE</b> & <b>ENJOY.</b>
+<p style="color:turquoise; margin-top:130px;margin-left:130px;">
+<i>www.techiestudy.com
+</i></div></div>
+</body>
+</html>

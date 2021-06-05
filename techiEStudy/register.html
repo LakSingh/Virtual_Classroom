@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="techiestudy.css">
+<script type="text/javascript" src="techiestudy.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+.field{
+ width: 70%;
+  padding: 12px 20px;
+  margin: 6px 25px 6px 55px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;}
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 70px;
+  border: none;
+  cursor: pointer;
+  width: 68%;
+font-size:20px;
+}
+button:hover {
+  opacity: 0.8;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 120px;
+  height:120px;
+  border-radius: 50%;
+}
+
+.container {
+padding: 10px;
+width:400px;
+height:720px;
+margin-left:450px;
+ background: rgb(0,255,255,0.3);
+}</style>
+<script>
+function validate(){
+var fnm=document.register.fname.value;
+var lnm=document.register.lname.value;
+var eml=document.register.email.value;
+var pwd=document.register.pass.value;
+var cpwd=document.register.repass.value;
+if(!(/^[A-Za-z]{3,}$/).test(fnm))
+alert("First name must be at least 3 letters long");
+if(!(/^[A-Za-z]{3,}$/).test(lnm))
+alert("Last name must be at least 3 letters long");
+if(!(/^[A-Za-z._]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z]{2,6}$/).test(eml))
+alert("email must contain @ after at least 3 letters and . after at least 3 letters after @ and at least 2 letters after .");
+if(pwd.length<6)
+alert("password must be at least 6 characters long");
+if(cpwd!=pwd)
+alert("Both the passwords must be same. ");
+if(!document.register.tnc.checked){
+alert("You must agree to the terms and conditions first.");
+return false;}
+}
+</script>
+</head>
+<body><br>
+<div id="head">
+<img src="logo.jpg" width="150px" height="100px">
+</div><br>
+<div class="nav">
+<a class="hactive" href="home.html"><b>Home</b></a>
+<a href="register.html"><b>Register</b></a>
+<a href="login.html"><b>Login</b></a>
+<a href="about.html"><b>About Us</b></a>
+
+</div>
+<br><br>
+<form name="register" action="register.php" method="POST" onsubmit="return validate()" >
+ <div class="container">
+ <div class="imgcontainer">
+    <img src="register.jpg" alt="register" class="avatar">
+ </div>
+ <input type="text" placeholder="Enter First Name" name="fname" required class="field">
+ <input type="text" placeholder="Enter Last Name" name="lname" class="field">
+ <input type="text" placeholder="Enter Email id" name="email" required class="field">
+ <input type="password" placeholder="Password" name="pass" required class="field">
+ <input type="password" placeholder="Retype password" name="repass" required class="field"><br>
+ <input type="checkbox" checked="checked" name="tnc" style="margin-left:15px; margin-top:0px;"> I accept all the term and 
+ conditions and will abide     by them. 
+<br><br><button name="register" class="register">Register</button>
+<hr style="width:390px; margin-letf:5px; height:3px; background:gray;">
+<p style="text-align:center;font-weight:bold;color:light-gray;font-size:21px;">Already have an account?</p>
+<button name="login" class="login"><a href="login.html" style="color:white; font-size:20px;text-decoration:none;">Login</a></button></div>
+</form>
+<br><br>
+</br></br><div id="bottom">
+<div class="developers">
+<h2 font-weight="bold">Developed By: </h2>
+<p class="contact" style="margin-top:0px;">
+<b>ANURAG SOLANKI</b><br>
+1806052<br>
+<b>LAXMI KUMARI</b><br>
+ 1806073<br>
+Computer Science and Engineering Department,<br>
+<b>National Institute of Technology, Patna.</b>
+<br><img src="https://img.collegepravesh.com/2016/09/NITP-Logo.png" width="100px" height="100px" style="margin-left:60px;"/></p>
+</div><div class="ts">
+<img src="logo.jpg" width="150px" height="100px">
+<p style="font-family:ravie;"><b>LEARN</b>, <b>PRACTICE</b> & <b>ENJOY.</b>
+<p style="color:turquoise; margin-top:130px;margin-left:130px;">
+<i>www.techiestudy.com
+</i></div></div>
+</body>
+</html>
